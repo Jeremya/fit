@@ -1,0 +1,1 @@
+CREATE TABLE eaas_st.test_json(eaas_context_id text, eaas_creation_date timestamp, eaas_modification_date timestamp,metadatas_values text,PRIMARY KEY (eaas_context_id, eaas_creation_date)) WITH CLUSTERING ORDER BY (eaas_creation_date ASC);
