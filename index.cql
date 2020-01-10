@@ -1,0 +1,1 @@
+CREATE SEARCH INDEX ON eaas_st.test_json WITH COLUMNS metadatas_values;
