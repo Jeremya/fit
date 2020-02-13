@@ -10,12 +10,13 @@ This is an example of https://docs.datastax.com/en/dse/5.1/dse-dev/datastax_ente
 
 ```
 CREATE KEYSPACE fit WITH replication = {'class': 'SimpleStrategy' , 'replication_factor': 1 };
-```
 
+# create table with JSON in complexvalue column
 CREATE TABLE fit.jsonlist (
     id text PRIMARY KEY,
     complexvalue text
 );
+```
 
 You need to download and unzip dse and update the path in maven `pom.xml` of 3 jars.
 Then, you will need to change (if you want) the name of the column containing JSON in JsonListFieldInputTransformer.java
